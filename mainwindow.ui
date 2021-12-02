@@ -143,40 +143,46 @@ background-color: rgb(242, 237, 208);</string>
         <widget class="QWidget" name="ununsed" native="true"/>
        </item>
        <item>
-        <widget class="QWidget" name="widget_button_help" native="true">
-         <layout class="QVBoxLayout" name="verticalLayout_5">
+        <widget class="QWidget" name="widget_6" native="true">
+         <layout class="QVBoxLayout" name="verticalLayout_11">
           <item>
-           <widget class="QPushButton" name="pushButton_highscore">
-            <property name="font">
-             <font>
-              <family>Comic Sans MS</family>
-              <pointsize>10</pointsize>
-             </font>
-            </property>
-            <property name="styleSheet">
-             <string notr="true">color: rgb(0, 0, 0);
+           <widget class="QWidget" name="widget_button_help" native="true">
+            <layout class="QVBoxLayout" name="verticalLayout_5">
+             <item>
+              <widget class="QPushButton" name="pushButton_highscore">
+               <property name="font">
+                <font>
+                 <family>Comic Sans MS</family>
+                 <pointsize>10</pointsize>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">color: rgb(0, 0, 0);
 background-color: rgb(242, 192, 148);</string>
-            </property>
-            <property name="text">
-             <string>Highscore</string>
-            </property>
-           </widget>
-          </item>
-          <item>
-           <widget class="QPushButton" name="pushButton_help">
-            <property name="font">
-             <font>
-              <family>Comic Sans MS</family>
-              <pointsize>10</pointsize>
-             </font>
-            </property>
-            <property name="styleSheet">
-             <string notr="true">color: rgb(0, 0, 0);
+               </property>
+               <property name="text">
+                <string>Highscore</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="pushButton_help">
+               <property name="font">
+                <font>
+                 <family>Comic Sans MS</family>
+                 <pointsize>10</pointsize>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">color: rgb(0, 0, 0);
 background-color: rgb(242, 192, 148);</string>
-            </property>
-            <property name="text">
-             <string>Help</string>
-            </property>
+               </property>
+               <property name="text">
+                <string>Help</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
            </widget>
           </item>
          </layout>
@@ -236,13 +242,13 @@ background-color: rgb(242, 192, 148);</string>
         </widget>
        </item>
        <item>
-        <widget class="QWidget" name="widget_data" native="true">
-         <property name="styleSheet">
-          <string notr="true">background-color: rgb(191, 127, 90);</string>
-         </property>
+        <widget class="QWidget" name="widget_data_2" native="true">
          <layout class="QVBoxLayout" name="verticalLayout_10">
           <item>
-           <widget class="QWidget" name="widget_6" native="true">
+           <widget class="QWidget" name="widget_data" native="true">
+            <property name="styleSheet">
+             <string notr="true">background-color: rgb(140, 78, 55);</string>
+            </property>
             <layout class="QVBoxLayout" name="verticalLayout_8">
              <item>
               <widget class="QLabel" name="label">
