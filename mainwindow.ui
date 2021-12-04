@@ -192,7 +192,7 @@ background-color: rgb(242, 192, 148);</string>
      </widget>
     </item>
     <item>
-     <widget class="QWidget" name="widget_tetris" native="true">
+     <widget class="Board" name="widget_tetris" native="true">
       <property name="styleSheet">
        <string notr="true">background-color: rgb(242, 237, 208);</string>
       </property>
@@ -293,7 +293,7 @@ background-color: rgb(242, 192, 148);</string>
                  </widget>
                 </item>
                 <item>
-                 <widget class="QLabel" name="label_3">
+                 <widget class="QLabel" name="label_score">
                   <property name="font">
                    <font>
                     <family>Gotham</family>
@@ -342,7 +342,7 @@ background-color: rgb(242, 192, 148);</string>
                  </widget>
                 </item>
                 <item>
-                 <widget class="QLabel" name="label_5">
+                 <widget class="QLabel" name="label_lines">
                   <property name="font">
                    <font>
                     <family>Gotham</family>
@@ -382,7 +382,7 @@ background-color: rgb(242, 192, 148);</string>
                  </widget>
                 </item>
                 <item>
-                 <widget class="QLabel" name="label_7">
+                 <widget class="QLabel" name="label_apm">
                   <property name="font">
                    <font>
                     <family>Gotham</family>
@@ -422,7 +422,7 @@ background-color: rgb(242, 192, 148);</string>
                  </widget>
                 </item>
                 <item>
-                 <widget class="QLabel" name="label_9">
+                 <widget class="QLabel" name="label_time">
                   <property name="font">
                    <font>
                     <family>Gotham</family>
@@ -452,6 +452,14 @@ background-color: rgb(242, 192, 148);</string>
    </layout>
   </widget>
  </widget>
+ <customwidgets>
+  <customwidget>
+   <class>Board</class>
+   <extends>QWidget</extends>
+   <header>board.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
  <resources/>
  <connections/>
 </ui>
