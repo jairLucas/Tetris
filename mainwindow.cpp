@@ -75,12 +75,24 @@ void MainWindow::on_pushButton_start_clicked()
     QString time_text = time.toString("m:ss");
     ui->label_time->setText(time_text);
 
+    //configurando contenido de los label de estadistica
+    ui->label_apm->setText(QString::number(apm));
+    ui->label_score->setText(QString::number(score));
+    ui->label_lines->setText(QString::number(lines));
+
+    //Graficando el tablero
 }
 
 void MainWindow::on_pushButton_restart_clicked()
 {
+
     time.setHMS(0,0,0);
     QString time_text = time.toString("m:ss");
     ui->label_time->setText(time_text);
+
+    ui->widget_tetrix->SetPoints({0,0},{300,0},{0,600},{300,600});
+    ui->widget_tetrix->repaint();
+
+
 }
 

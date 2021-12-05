@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>901</width>
-    <height>554</height>
+    <width>937</width>
+    <height>623</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -192,7 +192,13 @@ background-color: rgb(242, 192, 148);</string>
      </widget>
     </item>
     <item>
-     <widget class="Board" name="widget_tetris" native="true">
+     <widget class="Board" name="widget_tetrix" native="true">
+      <property name="baseSize">
+       <size>
+        <width>300</width>
+        <height>600</height>
+       </size>
+      </property>
       <property name="styleSheet">
        <string notr="true">background-color: rgb(242, 237, 208);</string>
       </property>
