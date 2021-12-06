@@ -1,23 +1,11 @@
 #ifndef BLOCK_H
 #define BLOCK_H
 
-#include <QWidget>
-
-namespace Ui {
-class Block;
-}
-
-//enum Shape { NoShape, TetriminoL, TetriminoJ, TetriminoZ, TetriminoS, TetriminoI, TetriminoO, TetriminoT };
-
 template <typename Type>
-class Block : public QWidget
+class Block
 {
-    Q_OBJECT
-
 public:
-    explicit Block(QWidget *parent = nullptr);
-    ~Block();
-
+    Block();
     //void setRandomShape();
     void setShape();
     Block GetPosition();
@@ -28,7 +16,7 @@ public:
     void spinRight();
 
 private:
-    Ui::Block *ui;
+
 };
 
 
@@ -53,5 +41,5 @@ struct TetrominoO : Block<TetrominoO>{
 struct TetrominoT : Block<TetrominoT>{
 
 };
-
 #endif // BLOCK_H
+
