@@ -40,7 +40,6 @@ struct TetrominoO : Block<TetrominoO>{
 };
 struct TetrominoT : Block<TetrominoT>{
 
-    Block();
 };
 #endif // BLOCK_H
 
