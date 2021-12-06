@@ -8,6 +8,7 @@
 #include <QMessageBox>
 #include <QString>
 
+
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
 QT_END_NAMESPACE
@@ -26,6 +27,7 @@ public:
     unsigned score{0};  //score sujeto a las reglas del juego
     unsigned lines{0};  //contador del numero de lineas
     unsigned apm{0};    //contador de las acciones por minuto
+    unsigned char TAM{};
     QMessageBox msgBox;
 
 //slots propios

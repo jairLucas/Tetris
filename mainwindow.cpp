@@ -6,6 +6,7 @@ MainWindow::MainWindow(QWidget *parent)
     , ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
+    TAM = ui->widget_tetrix->GetTam();
     //coneccion del timer para que actualize el cronometro cada segundo
     connect(timer, SIGNAL(timeout()), this, SLOT(updateTime()));
     timer->start(1000);
@@ -17,6 +18,7 @@ void MainWindow::updateTime(){
     time=time.addSecs(1);
     QString time_text = time.toString("m:ss");
     ui->label_time->setText(time_text);
+
 }
 
 
@@ -89,10 +91,9 @@ void MainWindow::on_pushButton_restart_clicked()
     time.setHMS(0,0,0);
     QString time_text = time.toString("m:ss");
     ui->label_time->setText(time_text);
-
-    ui->widget_tetrix->SetPoints({0,0},{300,0},{0,600},{300,600});
+    ui->widget_tetrix->SetPoints({TAM*0,TAM*0},{TAM*10,TAM*0},{TAM*00,TAM*20},{TAM*10,TAM*20});
     ui->widget_tetrix->repaint();
-
+    ui->label_lines->setText(QString::number(TAM));
 
 }
 
