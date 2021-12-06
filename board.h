@@ -26,8 +26,8 @@ private:
     QPoint C{0,0};
     QPoint D{0,0};
 
-protected:
-    void paintEvent(QPaintEvent *event);
+public:
+    virtual void paintEvent(QPaintEvent *event);
 
 };
 
