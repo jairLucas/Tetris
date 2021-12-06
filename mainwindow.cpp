@@ -25,21 +25,6 @@ MainWindow::~MainWindow()
 {
     delete ui;
 }
-/*
- * Metodos para actualizar el cronometro usando QTimer y QTime
-*/
-/*
-void MainWindow::definirResultadoFinal(){
-
-    //si las piezas tocan el borde superior pierde
-    msgBox.setWindowTitle("Juego Terminado");
-    msgBox.setIcon(QMessageBox::Information);
-    msgBox.setStandardButtons(QMessageBox::Yes);
-    msgBox.addButton(QMessageBox::No);
-    msgBox.setDefaultButton(QMessageBox::Yes);
-    msgBox.setEscapeButton(QMessageBox::No);
-}
-*/
 
 /*
  * #############################################################

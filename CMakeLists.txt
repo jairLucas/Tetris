@@ -38,7 +38,9 @@ set(PROJECT_SOURCES
         imagenes.qrc
         block.cpp
         block.h
-
+        piece.cpp
+        piece.ui
+        piece.h
 )
 
 if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)

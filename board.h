@@ -16,8 +16,8 @@ class Board : public QWidget
 public:
     explicit Board(QWidget *parent = nullptr);
     ~Board();
-
     void SetPoints(const QPoint& a, const QPoint& b, const QPoint& c, const QPoint& d);
+    unsigned int TAM{30};
 
 private:
     Ui::Board *ui;
@@ -27,7 +27,7 @@ private:
     QPoint D{0,0};
 
 public:
-    virtual void paintEvent(QPaintEvent *event);
+    void paintEvent(QPaintEvent *event);
 
 };
 
