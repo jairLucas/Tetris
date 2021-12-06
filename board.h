@@ -33,8 +33,8 @@ private:
     QPoint D{0,0};
     unsigned int TAM{30};
 
-protected:
-    void paintEvent(QPaintEvent *event);
+public:
+    virtual void paintEvent(QPaintEvent *event);
 
 };
 
